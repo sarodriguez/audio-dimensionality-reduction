@@ -1,0 +1,37 @@
+spectrogram:
+#  sample_rate: 12000 # samples per sec
+  window_size: 600 # keep in mind that 1s equals sample_rate samples for setting the sample rate
+  hop_size: 300 # sample_rate/hop_size = frames per second
+  fmin: 50 # lowest frequency
+  fmax: 6000 # highest frequency
+  n_bins: 50
+synthetic_dataset:
+  sample_rate: 12000
+  duration: 3 # Duration in seconds
+  frequency_std_levels:
+    500: 50 # First frequency group, 500Hz mean and 50 std
+    1000: 100 # Second frequency group, 1000Hz mean and 100 std
+    2000: 200 # First frequency group, 2000Hz mean and 100 std
+  samples_per_level: 200 # Each frequency group/level will have this number of samples. In this case: 15000 total samples
+  wave_types: ['sin', 'square', 'triangle', 'sawtooth'] # 4 types of waves will be used
+  frequency_variations: ['increase', 'decrease', 'increasedecrease', 'decreaseincrease', 'none'] # 5 types of frequency variations
+  amplitude_variations: ['increase', 'decrease', 'increasedecrease', 'decreaseincrease', 'none'] # 5 types of frequency variations
+  combination_probability: 0.1 # the probability of combining 2 samples
+free_spoken_digits_dataset:
+  sample_rate: 22050
+  duration: 0.5
+models:
+  param_umap: Parametric UMAP
+#  lda: Latent Dirichlet Allocation (LDA)
+  tsvd: Truncated SVD
+  pca: Principal Components Analysis (PCA)
+#  tsne: t-SNE
+  umap: UMAP
+input_types:
+  raw_waveforms: Raw Waveforms
+  spectrograms: Spectrograms
+  embeddings: Embeddings
+datasets:
+  free_spoken_digits_dataset: the Free Spoken Digits Dataset
+  synthetic_dataset: a Synthetic Dataset
+  emotion_embeddings: Neural Network embeddings from Speech
