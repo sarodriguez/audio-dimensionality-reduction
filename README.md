@@ -26,6 +26,6 @@ setup is defined here, as well as the datasets' characteristics and the input ty
 of this sections will affect the way the tool works. 
 
 ## Execution
-In order to run the dashboard with each dataset, different scripts must be executed. You can a better
+In order to run the dashboard with each dataset, different scripts must be executed. You view a better
 detail in the file `commands.sh`
 
