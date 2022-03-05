@@ -29,3 +29,5 @@ of this sections will affect the way the tool works.
 In order to run the dashboard with each dataset, different scripts must be executed. You view a better
 detail in the file `commands.sh`
 
+## Demo
+A brief introduction and a demo of the tool can be viewed in [this youtube video](www.youtube.com/watch?v=n3R727QA1qo). 
