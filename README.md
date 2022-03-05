@@ -31,3 +31,15 @@ detail in the file `commands.sh`
 
 ## Demo
 A brief introduction and a demo of the tool can be viewed in [this youtube video](www.youtube.com/watch?v=n3R727QA1qo). 
+
+## Some print screens
+
+Print screen of the main section of the tool where the 2-d representation of audio waveforms and spectrograms can be 
+viewed, as well as upload audio clips to be included in the existing graphs.
+
+![View Dimensionality Reduction](img/dimensionality_reduction.png)
+
+In the edit clip section a recording can be modified to see how these changes influence the 2-d representation
+created by the dimensionality reduction techniques
+
+![Edit clip](img/edit_audio.png)
